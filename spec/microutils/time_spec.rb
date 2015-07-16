@@ -19,9 +19,9 @@ RSpec.describe Time do
   end
   
   it "can calculate the duration of a block" do
-    duration_ms = Time.measure { sleep 0.1 }
+    duration_ms = Time.measure { sleep 0.15 }
     # this is a very simplified validation, but it does check things!
-    expect(duration_ms).to satisfy { |v| v >= 100 && v < 200 }
+    expect(duration_ms).to satisfy { |v| v >= 150 && v < 160 }
   end
   
   it "can be created from_ms given a timestamp" do
@@ -46,7 +46,7 @@ RSpec.describe Time do
     ref = Time.now
     sleep 1
     later = Time.now
-    expect(ref.elapsed_ms).to satisfy { |v| v >= 1000 }
+    expect(ref.elapsed_ms).to satisfy { |v| v >= 1000 && v < 1010}
   end
 
 end
