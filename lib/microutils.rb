@@ -1,8 +1,6 @@
-$LOAD_PATH.unshift File.dirname(__FILE__)
-
 # external deps
-require 'json'
+#require 'json'
 
 # internal deps
-require "microutils/time"
-require "microutils/environment"
+require_relative "microutils/time"
+require_relative "microutils/environment"
