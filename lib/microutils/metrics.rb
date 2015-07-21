@@ -1,4 +1,5 @@
 require 'em-http-request'
+require 'keen'
 
 Thread.new { EventMachine.run }
 
