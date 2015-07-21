@@ -4,3 +4,4 @@
 # internal deps
 require_relative "microutils/time"
 require_relative "microutils/environment"
+require_relative "microutils/metrics"
